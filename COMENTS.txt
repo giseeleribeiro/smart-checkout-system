@@ -1,0 +1,26 @@
+Smart Checkout System (prototype only)
+
+In order to develop a simple, transparent and efficient checkout system, we've 
+created the following pages:
+
+- homepage
+- cart
+- shipping
+- payment
+- review (the customer can double check the order before place it)
+- order confirmation (order number for tracking)
+
+
+We've included some javascript features such as:
+- Add to cart
+- Quantity update and remove item
+- Live order summary
+- Promo code example (SAVE10)
+- Shipping cost updates
+- Basic form validation
+- Card number / expiry / CVV formatting
+- Review page populated with stored form data
+- Order confirmation with generated order number
+
+
+

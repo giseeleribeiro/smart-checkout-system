@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review Order | Smart Checkout System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="review">
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <div class="brand-mark">
+          <img src="images/logo.png" alt="OneStop logo">
+        </div>
+          Smart Checkout System
+          <small>Review and confirm</small>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="cart-link" href="cart.html">Cart (<span data-cart-count>0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <div class="container">
+      <div class="stepper">
+        <div class="step done"><span class="step-number">1</span> Shipping</div>
+        <div class="step done"><span class="step-number">2</span> Payment</div>
+        <div class="step active"><span class="step-number">3</span> Review</div>
+      </div>
+      <h1 class="page-title">Review your order</h1>
+      <p class="page-subtitle">Check shipping, payment and product details before placing the order.</p>
+
+      <div class="layout-grid">
+        <section class="stack" data-review-content></section>
+
+        <aside class="card summary-card">
+          <div class="summary-head"><h3>Order summary</h3><span class="badge">Final</span></div>
+          <div data-summary-items></div>
+          <div class="summary-totals">
+            <div class="summary-line"><span>Subtotal</span><span data-subtotal>$0.00</span></div>
+            <div class="summary-line"><span>Shipping</span><span data-shipping>$0.00</span></div>
+            <div class="summary-line hidden" data-discount-row><span>Discount</span><span data-discount>− $0.00</span></div>
+            <div class="summary-line total"><span>Total</span><span data-total>$0.00</span></div>
+          </div>
+          <div style="display:grid; gap:12px; margin-top:18px;">
+            <button type="button" class="btn full-width" data-place-order>Place order</button>
+            <a href="checkout.html?step=payment" class="btn-ghost full-width" style="text-align:center;">Back to payment</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

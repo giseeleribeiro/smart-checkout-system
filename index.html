@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OneStop | Smart Checkout System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <div class="brand-mark">
+          <img src="images/logo.png" alt="OneStop logo">
+        </div>
+        <div class="brand-copy">
+          Smart Checkout System
+          <small>Smart Checkout System Prototype</small>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html#products">Products</a>
+        <a class="nav-link" href="cart.html">Cart</a>
+        <a class="cart-link" href="cart.html">Cart (<span data-cart-count>0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-card">
+        <div>
+          <h1>Technological solution designed to modernise and optimise the purchase process</h1>
+          <p>
+            This prototype shows how a smart checkout system for OneStop works, including pages like the homepage, cart, 
+            shipping, payment, review, and order confirmation, all connected using JavaScript.
+          </p>
+          <div class="hero-actions">
+            <a href="cart.html" class="btn">Start checkout</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Products</h2>
+            <p>Sample products are included so the checkout can be tested from start to finish.</p>
+          </div>
+          <p data-feedback style="color: var(--success); font-weight: 700;"></p>
+        </div>
+        <div class="product-grid" data-product-grid></div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
